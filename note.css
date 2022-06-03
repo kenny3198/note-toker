@@ -18,12 +18,32 @@ LIGHT: #a4b1aa */
  body {
      font-family: 'Courier New', Courier, monospace;
      display: grid;
+     flex-wrap: wrap;
      place-items: center;
      padding: 2rem;
      color:#121614 ;
+     width: 100%;
+ }
+ @media only screen and (max-width: 350px) {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        display: grid;
+        flex-wrap: wrap;
+        place-items: center;
+        padding: 2rem;
+        color:#121614 ;
+        width: 90%;
+    }
+    .modal-tittle {
+        font-size: 1rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        max-width: 75%;
+    }
  }
  .modal-container {
      position: fixed;
+     flex-wrap: wrap;
      top: 0;
      left: 0;
      bottom: 0;
@@ -108,6 +128,7 @@ LIGHT: #a4b1aa */
 }
 form {
     display: grid;
+    flex-wrap: wrap;
     grid-gap: 1rem;
     margin: 1rem 0;
     width: 100%;
@@ -139,6 +160,7 @@ form, [for="tittle"], input:focus{
 
 form, [for="note"], textarea{
     flex: 1 1 80%;
+    flex-wrap: wrap;
     border: 3px solid darkgray;
     padding: .5rem;
     color: lightslategray;
@@ -148,6 +170,7 @@ form, [for="note"], textarea{
 
 form, [for="tittle"], input{
     flex: 1 1 80%;
+    flex-wrap: wrap;
     border: 3px solid darkgray;
     padding: .5rem;
     color: lightslategray;
